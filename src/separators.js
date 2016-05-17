@@ -1,7 +1,7 @@
 'use strict';
 
 function thousands_separators(num) {
-	new;  
+	return num;  
 }
 
 module.exports = thousands_separators;
