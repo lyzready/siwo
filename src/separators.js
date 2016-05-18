@@ -1,13 +1,13 @@
 'use strict';
 
 function thousands_separators(num) {
-	var re="";
-	var n=num;
- 	while((n/=1000)>=1){
-		re=","+(1000*(n-Math.floor(n))).toString()+re;
-		n=Math.floor(n);
+	var n=num.toString().split('.');
+	var inte_spl=n[0].split('');
+	for(var i=inte_spl.length-4;i>0;i-=3){
+		inte_spl[i]+=',';
 	}
-	return (n*1000).toString() +re;
+	n[0]=inte_spl.join('');
+	return n.join('.');
 }
 
 module.exports = thousands_separators;
