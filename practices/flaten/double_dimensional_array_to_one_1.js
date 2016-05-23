@@ -4,7 +4,7 @@ function double_to_one(collection) {
 
  var re=[];
 	for( var n1=0 ; n1< collection.length; n1++){
-		if(i[n1].length == undefined)
+		if(re[n1].length == undefined)
 			re.push(collection[n1]);
 		else
 			for(var n2 = 0;n2< collection[n1].length;n2++)

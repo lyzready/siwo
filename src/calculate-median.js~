@@ -1,0 +1,15 @@
+function calculate_median(arr) {
+	var length=arr.length;
+	if(length<2)//input error
+		return "array length must greater than 1";
+	var even_length=Math.floor(length/2);
+	var median;
+	if(even_length% 2 == 0)//
+		median = (arr[even_length-1]+arr[even_length+1])/2;
+	else
+		median = arr[even_length];
+	return median; 
+		
+}
+
+module.exports = calculate_median;
