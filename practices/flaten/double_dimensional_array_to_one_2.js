@@ -8,7 +8,7 @@ function double_to_one(collection) {
 		else
 			for(var n2 = 0;n2< collection[n1].length;n2++)
 				if(!re.some(check,collection[n1][n2]))
-					re.push(coection[n1][n2]);
+					re.push(collection[n1][n2]);
 	}
 	return re;
 }
