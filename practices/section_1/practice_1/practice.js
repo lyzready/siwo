@@ -1,6 +1,6 @@
 function collect_same_elements(collection_a, collection_b) {
   var re=[];
-  for (var i = 0; i < collection_a; i++)
+  for (var i = 0; i < collection_a.length; i++)
   {
 	if(collection_b.indexOf(collection_a[i])!=-1 &&
 		re.indexOf(collection_a[i] == -1))//排除已包含元素
