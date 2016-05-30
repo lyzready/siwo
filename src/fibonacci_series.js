@@ -2,7 +2,8 @@
 
 function fibonacci_series(n) {
 	var re =[0];
-	myfunction(re,n-1);
+	myfunction(re,n);
+
 	return re;
 }
 function myfunction(re,n){
